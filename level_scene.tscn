@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpfe4sxl2mncp"]
+
+[ext_resource type="Texture2D" uid="uid://cqrjjl48q70ye" path="res://Drawing.sketchpad.jpeg" id="1_187gu"]
+[ext_resource type="Texture2D" uid="uid://48l6d67matwh" path="res://icon.svg" id="2_3mivm"]
+
+[node name="Level_scene" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.499928, 0.499603)
+texture = ExtResource("1_187gu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_3mivm")
