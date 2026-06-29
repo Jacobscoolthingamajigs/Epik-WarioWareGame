@@ -7,12 +7,13 @@
 script = ExtResource("1_goadl")
 
 [node name="Backround" type="TextureRect" parent="."]
-offset_left = 2.0
+offset_left = 1.0
 offset_top = 1.0
-offset_right = 1151.0
-offset_bottom = 647.0
+offset_right = 1601.0
+offset_bottom = 1201.0
+scale = Vector2(0.936799, 0.999469)
 texture = ExtResource("1_cjnew")
-expand_mode = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="F_F_F" type="RichTextLabel" parent="."]
 clip_contents = false
@@ -24,40 +25,46 @@ theme_override_colors/default_color = Color(0.464143, 0.618975, 0.291326, 1)
 theme_override_colors/font_outline_color = Color(0.0156863, 0.321569, 0, 1)
 theme_override_constants/outline_size = 30
 theme_override_font_sizes/normal_font_size = 70
-text = "Fungi Foilage Facility "
+text = "Fungi Foliage Facility "
 
 [node name="BEGIN_B" type="Button" parent="."]
-offset_left = 50.0
-offset_top = 118.0
-offset_right = 382.0
-offset_bottom = 187.0
+offset_left = 39.0
+offset_top = 145.0
+offset_right = 371.0
+offset_bottom = 214.0
+scale = Vector2(2.66657, 2.86385)
 theme_override_colors/font_outline_color = Color(0.0117647, 0.321569, 0, 1)
 theme_override_colors/font_color = Color(0.462745, 0.619608, 0.290196, 1)
 theme_override_constants/outline_size = 20
 theme_override_font_sizes/font_size = 30
 text = "BEGIN!"
+metadata/_edit_use_anchors_ = true
 
 [node name="SETTINGS_B" type="Button" parent="."]
-offset_left = 50.0
-offset_top = 205.0
-offset_right = 237.0
-offset_bottom = 255.0
+offset_left = 46.0
+offset_top = 363.0
+offset_right = 233.0
+offset_bottom = 413.0
+scale = Vector2(1.59316, 2.02839)
 theme_override_colors/font_outline_color = Color(0.0117647, 0.321569, 0, 1)
 theme_override_colors/font_color = Color(0.462745, 0.619608, 0.290196, 1)
 theme_override_constants/outline_size = 20
 theme_override_font_sizes/font_size = 20
 text = "Settings"
+metadata/_edit_use_anchors_ = true
 
 [node name="EXIT_B" type="Button" parent="."]
-offset_left = 253.0
-offset_top = 205.0
-offset_right = 382.0
-offset_bottom = 255.0
+offset_left = 359.0
+offset_top = 369.0
+offset_right = 488.0
+offset_bottom = 419.0
+scale = Vector2(1.64855, 1.75895)
 theme_override_colors/font_outline_color = Color(0.0117647, 0.321569, 0, 1)
 theme_override_colors/font_color = Color(0.462745, 0.619608, 0.290196, 1)
 theme_override_constants/outline_size = 20
 theme_override_font_sizes/font_size = 20
 text = "Exit"
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="BEGIN_B" to="." method="_on_begin_b_pressed"]
 [connection signal="pressed" from="EXIT_B" to="." method="_on_exit_b_pressed"]
