@@ -11,10 +11,51 @@ offset_bottom = 40.0
 scale = Vector2(0.499928, 0.499603)
 texture = ExtResource("1_187gu")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Shroomtainer" type="HBoxContainer" parent="."]
+offset_left = 937.0
+offset_top = 699.0
+offset_right = 1593.0
+offset_bottom = 827.0
+scale = Vector2(0.787138, 0.849362)
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+[node name="CoolShroom" type="TextureRect" parent="Shroomtainer"]
 layout_mode = 2
 texture = ExtResource("2_3mivm")
+
+[node name="CoolShroom2" type="TextureRect" parent="Shroomtainer"]
+layout_mode = 2
+texture = ExtResource("2_3mivm")
+
+[node name="CoolShroom3" type="TextureRect" parent="Shroomtainer"]
+layout_mode = 2
+texture = ExtResource("2_3mivm")
+
+[node name="CoolShroom4" type="TextureRect" parent="Shroomtainer"]
+layout_mode = 2
+texture = ExtResource("2_3mivm")
+
+[node name="CoolShroom5" type="TextureRect" parent="Shroomtainer"]
+layout_mode = 2
+texture = ExtResource("2_3mivm")
+
+[node name="level" type="RichTextLabel" parent="."]
+offset_left = 979.0
+offset_top = 489.0
+offset_right = 1465.0
+offset_bottom = 676.0
+theme_override_colors/default_color = Color(0, 0.360784, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0.478431, 0, 1)
+theme_override_constants/outline_size = 30
+theme_override_font_sizes/normal_font_size = 35
+text = "Researches Completed ="
+
+[node name="Timer" type="RichTextLabel" parent="."]
+offset_left = 1128.0
+offset_top = 203.0
+offset_right = 1479.0
+offset_bottom = 382.0
+theme_override_colors/default_color = Color(0, 0.360784, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0.478431, 0, 1)
+theme_override_constants/outline_size = 50
+theme_override_font_sizes/normal_font_size = 100
+text = "0.0"

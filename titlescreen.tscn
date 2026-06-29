@@ -32,7 +32,7 @@ offset_left = 39.0
 offset_top = 145.0
 offset_right = 371.0
 offset_bottom = 214.0
-scale = Vector2(2.66657, 2.86385)
+scale = Vector2(2.66657, 2.46385)
 theme_override_colors/font_outline_color = Color(0.0117647, 0.321569, 0, 1)
 theme_override_colors/font_color = Color(0.462745, 0.619608, 0.290196, 1)
 theme_override_constants/outline_size = 20
@@ -41,11 +41,11 @@ text = "BEGIN!"
 metadata/_edit_use_anchors_ = true
 
 [node name="SETTINGS_B" type="Button" parent="."]
-offset_left = 46.0
-offset_top = 363.0
-offset_right = 233.0
-offset_bottom = 413.0
-scale = Vector2(1.59316, 2.02839)
+offset_left = 42.0
+offset_top = 329.0
+offset_right = 229.0
+offset_bottom = 379.0
+scale = Vector2(1.77313, 1.90721)
 theme_override_colors/font_outline_color = Color(0.0117647, 0.321569, 0, 1)
 theme_override_colors/font_color = Color(0.462745, 0.619608, 0.290196, 1)
 theme_override_constants/outline_size = 20
@@ -54,11 +54,11 @@ text = "Settings"
 metadata/_edit_use_anchors_ = true
 
 [node name="EXIT_B" type="Button" parent="."]
-offset_left = 359.0
-offset_top = 369.0
-offset_right = 488.0
-offset_bottom = 419.0
-scale = Vector2(1.64855, 1.75895)
+offset_left = 42.0
+offset_top = 447.0
+offset_right = 171.0
+offset_bottom = 497.0
+scale = Vector2(1.89043, 1.88953)
 theme_override_colors/font_outline_color = Color(0.0117647, 0.321569, 0, 1)
 theme_override_colors/font_color = Color(0.462745, 0.619608, 0.290196, 1)
 theme_override_constants/outline_size = 20
