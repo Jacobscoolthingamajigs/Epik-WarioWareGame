@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dpfe4sxl2mncp"]
 
 [ext_resource type="Texture2D" uid="uid://cqrjjl48q70ye" path="res://Drawing.sketchpad.jpeg" id="1_187gu"]
-[ext_resource type="Texture2D" uid="uid://48l6d67matwh" path="res://icon.svg" id="2_3mivm"]
+[ext_resource type="Texture2D" uid="uid://frqpb6b6hut1" path="res://Drawing.sketchpad.png" id="2_187gu"]
 
 [node name="Level_scene" type="Node2D"]
 
@@ -12,31 +12,31 @@ scale = Vector2(0.499928, 0.499603)
 texture = ExtResource("1_187gu")
 
 [node name="Shroomtainer" type="HBoxContainer" parent="."]
-offset_left = 937.0
+offset_left = 945.0
 offset_top = 699.0
-offset_right = 1593.0
-offset_bottom = 827.0
-scale = Vector2(0.787138, 0.849362)
+offset_right = 5021.0
+offset_bottom = 1539.0
+scale = Vector2(0.120706, 0.127062)
 
 [node name="CoolShroom" type="TextureRect" parent="Shroomtainer"]
 layout_mode = 2
-texture = ExtResource("2_3mivm")
+texture = ExtResource("2_187gu")
 
 [node name="CoolShroom2" type="TextureRect" parent="Shroomtainer"]
 layout_mode = 2
-texture = ExtResource("2_3mivm")
+texture = ExtResource("2_187gu")
 
 [node name="CoolShroom3" type="TextureRect" parent="Shroomtainer"]
 layout_mode = 2
-texture = ExtResource("2_3mivm")
+texture = ExtResource("2_187gu")
 
 [node name="CoolShroom4" type="TextureRect" parent="Shroomtainer"]
 layout_mode = 2
-texture = ExtResource("2_3mivm")
+texture = ExtResource("2_187gu")
 
 [node name="CoolShroom5" type="TextureRect" parent="Shroomtainer"]
 layout_mode = 2
-texture = ExtResource("2_3mivm")
+texture = ExtResource("2_187gu")
 
 [node name="level" type="RichTextLabel" parent="."]
 offset_left = 979.0
