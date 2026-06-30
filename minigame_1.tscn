@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://max6f1jxvscu"]
+[gd_scene load_steps=9 format=3 uid="uid://max6f1jxvscu"]
 
 [ext_resource type="Texture2D" uid="uid://3uyedyk52nif" path="res://Drawing-2.sketchpad-3.png" id="1_gi7k6"]
+[ext_resource type="Script" uid="uid://cvkt81fv8wnnj" path="res://minigame_1.gd" id="1_wh6qq"]
 [ext_resource type="PackedScene" uid="uid://drh4ctkrxsrgj" path="res://player.tscn" id="2_0hvi2"]
 [ext_resource type="Texture2D" uid="uid://frqpb6b6hut1" path="res://Drawing.sketchpad.png" id="3_0hvi2"]
 [ext_resource type="Script" uid="uid://cr1xsekfjp6rp" path="res://garlic_.gd" id="3_r6gmb"]
+[ext_resource type="PackedScene" uid="uid://xa03r5c2ktcv" path="res://node_2d.tscn" id="6_or1ld"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r6gmb"]
 size = Vector2(596.784, 48.4148)
@@ -11,7 +13,8 @@ size = Vector2(596.784, 48.4148)
 [sub_resource type="CircleShape2D" id="CircleShape2D_wh6qq"]
 radius = 78.0256
 
-[node name="Minigame_1" type="Node2D"]
+[node name="minigame_1" type="Node2D"]
+script = ExtResource("1_wh6qq")
 
 [node name="Scrolling Background" type="Parallax2D" parent="."]
 repeat_size = Vector2(1000, 0)
@@ -42,9 +45,9 @@ position = Vector2(314.628, 719.307)
 scale = Vector2(1, 2.10758)
 shape = SubResource("RectangleShape2D_r6gmb")
 
-[node name="Player" parent="Platform1" instance=ExtResource("2_0hvi2")]
-position = Vector2(-19.7766, 25.1548)
-scale = Vector2(0.506876, 0.634769)
+[node name="Player" parent="." instance=ExtResource("2_0hvi2")]
+position = Vector2(-163, 86)
+scale = Vector2(1.40965, 1.05985)
 
 [node name="Platform2" type="StaticBody2D" parent="."]
 position = Vector2(-108, 44)
@@ -84,8 +87,14 @@ shape = SubResource("RectangleShape2D_r6gmb")
 
 [node name="Garlic_" type="Node2D" parent="."]
 position = Vector2(3.05176e-05, 0)
-scale = Vector2(1, 1)
 script = ExtResource("3_r6gmb")
+
+[node name="Area2D" type="Area2D" parent="Garlic_"]
+position = Vector2(-1.00003, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Garlic_/Area2D"]
+position = Vector2(570, 1091)
+shape = SubResource("CircleShape2D_wh6qq")
 
 [node name="Garlic" type="TextureRect" parent="Garlic_"]
 offset_left = 507.0
@@ -96,49 +105,52 @@ rotation = 0.0124322
 scale = Vector2(0.156154, 0.156632)
 texture = ExtResource("3_0hvi2")
 
-[node name="Area2D" type="Area2D" parent="Garlic_"]
-position = Vector2(-1.00003, 2)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Garlic_/Area2D"]
-position = Vector2(570, 1090)
-shape = SubResource("CircleShape2D_wh6qq")
-
 [node name="Garlic_2" type="Node2D" parent="."]
 position = Vector2(3.05176e-05, 0)
-scale = Vector2(1, 1)
-
-[node name="Garlic" type="TextureRect" parent="Garlic_2"]
-offset_left = 934.0
-offset_top = 779.0
-offset_right = 1746.0
-offset_bottom = 1619.0
-rotation = 0.0124322
-scale = Vector2(0.156154, 0.156632)
-texture = ExtResource("3_0hvi2")
+script = ExtResource("3_r6gmb")
 
 [node name="Area2D" type="Area2D" parent="Garlic_2"]
 position = Vector2(-1.00003, 2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Garlic_2/Area2D"]
-position = Vector2(998, 842)
+position = Vector2(884, 848)
 shape = SubResource("CircleShape2D_wh6qq")
 
-[node name="Garlic_3" type="Node2D" parent="."]
-position = Vector2(3.05176e-05, 0)
-scale = Vector2(1, 1)
-
-[node name="Garlic" type="TextureRect" parent="Garlic_3"]
-offset_left = 92.9999
-offset_top = 478.0
-offset_right = 905.0
-offset_bottom = 1318.0
+[node name="Garlic" type="TextureRect" parent="Garlic_2"]
+offset_left = 819.0
+offset_top = 781.0
+offset_right = 1631.0
+offset_bottom = 1621.0
 rotation = 0.0124322
 scale = Vector2(0.156154, 0.156632)
 texture = ExtResource("3_0hvi2")
+
+[node name="Garlic_3" type="Node2D" parent="."]
+position = Vector2(3.05176e-05, 0)
+script = ExtResource("3_r6gmb")
 
 [node name="Area2D" type="Area2D" parent="Garlic_3"]
 position = Vector2(-1.00003, 2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Garlic_3/Area2D"]
-position = Vector2(160, 547)
+position = Vector2(115, 548)
 shape = SubResource("CircleShape2D_wh6qq")
+
+[node name="Garlic" type="TextureRect" parent="Garlic_3"]
+offset_left = 58.0
+offset_top = 484.0
+offset_right = 870.0
+offset_bottom = 1324.0
+rotation = 0.0124322
+scale = Vector2(0.156154, 0.156632)
+texture = ExtResource("3_0hvi2")
+
+[node name="ThemedTimer" parent="." instance=ExtResource("6_or1ld")]
+
+[node name="timer" type="RichTextLabel" parent="ThemedTimer"]
+offset_left = 30.0
+offset_right = 70.0
+offset_bottom = 40.0
+scale = Vector2(7.09004, 7.18855)
+text = "0.0
+"

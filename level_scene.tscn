@@ -13,30 +13,30 @@ offset_bottom = 40.0
 scale = Vector2(0.499928, 0.499603)
 texture = ExtResource("1_187gu")
 
-[node name="GarlicCotainer" type="HBoxContainer" parent="."]
+[node name="GarlicContainer" type="HBoxContainer" parent="."]
 offset_left = 945.0
 offset_top = 699.0
 offset_right = 5021.0
 offset_bottom = 1539.0
 scale = Vector2(0.120706, 0.127062)
 
-[node name="Garlic" type="TextureRect" parent="GarlicCotainer"]
+[node name="Garlic" type="TextureRect" parent="GarlicContainer"]
 layout_mode = 2
 texture = ExtResource("2_187gu")
 
-[node name="Garlic2" type="TextureRect" parent="GarlicCotainer"]
+[node name="Garlic2" type="TextureRect" parent="GarlicContainer"]
 layout_mode = 2
 texture = ExtResource("2_187gu")
 
-[node name="Garlic3" type="TextureRect" parent="GarlicCotainer"]
+[node name="Garlic3" type="TextureRect" parent="GarlicContainer"]
 layout_mode = 2
 texture = ExtResource("2_187gu")
 
-[node name="Garlic4" type="TextureRect" parent="GarlicCotainer"]
+[node name="Garlic4" type="TextureRect" parent="GarlicContainer"]
 layout_mode = 2
 texture = ExtResource("2_187gu")
 
-[node name="Garlic5" type="TextureRect" parent="GarlicCotainer"]
+[node name="Garlic5" type="TextureRect" parent="GarlicContainer"]
 layout_mode = 2
 texture = ExtResource("2_187gu")
 
