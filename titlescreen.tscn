@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://ckla7pl5fum15" path="res://Drawing-1.sketchpad.png" id="1_cjnew"]
 [ext_resource type="Script" uid="uid://whdbwv4xelet" path="res://titlescreen.gd" id="1_goadl"]
 
-[node name="TITLESCREEN" type="Node2D"]
+[node name="title_screen" type="Node2D"]
 script = ExtResource("1_goadl")
 
 [node name="Backround" type="TextureRect" parent="."]

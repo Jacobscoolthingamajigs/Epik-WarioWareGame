@@ -23,6 +23,7 @@ Global="*res://Global.gd"
 
 window/size/viewport_width=1500
 window/size/viewport_height=1200
+window/stretch/mode="viewport"
 
 [editor_plugins]
 

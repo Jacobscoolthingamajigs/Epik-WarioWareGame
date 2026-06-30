@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://dpfe4sxl2mncp"]
+[gd_scene load_steps=4 format=3 uid="uid://dpfe4sxl2mncp"]
 
+[ext_resource type="Script" uid="uid://nj322p3cb6ad" path="res://timer_screen.gd" id="1_3mivm"]
 [ext_resource type="Texture2D" uid="uid://cqrjjl48q70ye" path="res://Drawing.sketchpad.jpeg" id="1_187gu"]
 [ext_resource type="Texture2D" uid="uid://frqpb6b6hut1" path="res://Drawing.sketchpad.png" id="2_187gu"]
 
 [node name="Level_scene" type="Node2D"]
+script = ExtResource("1_3mivm")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 40.0
@@ -11,34 +13,34 @@ offset_bottom = 40.0
 scale = Vector2(0.499928, 0.499603)
 texture = ExtResource("1_187gu")
 
-[node name="Shroomtainer" type="HBoxContainer" parent="."]
+[node name="GarlicCotainer" type="HBoxContainer" parent="."]
 offset_left = 945.0
 offset_top = 699.0
 offset_right = 5021.0
 offset_bottom = 1539.0
 scale = Vector2(0.120706, 0.127062)
 
-[node name="CoolShroom" type="TextureRect" parent="Shroomtainer"]
+[node name="Garlic" type="TextureRect" parent="GarlicCotainer"]
 layout_mode = 2
 texture = ExtResource("2_187gu")
 
-[node name="CoolShroom2" type="TextureRect" parent="Shroomtainer"]
+[node name="Garlic2" type="TextureRect" parent="GarlicCotainer"]
 layout_mode = 2
 texture = ExtResource("2_187gu")
 
-[node name="CoolShroom3" type="TextureRect" parent="Shroomtainer"]
+[node name="Garlic3" type="TextureRect" parent="GarlicCotainer"]
 layout_mode = 2
 texture = ExtResource("2_187gu")
 
-[node name="CoolShroom4" type="TextureRect" parent="Shroomtainer"]
+[node name="Garlic4" type="TextureRect" parent="GarlicCotainer"]
 layout_mode = 2
 texture = ExtResource("2_187gu")
 
-[node name="CoolShroom5" type="TextureRect" parent="Shroomtainer"]
+[node name="Garlic5" type="TextureRect" parent="GarlicCotainer"]
 layout_mode = 2
 texture = ExtResource("2_187gu")
 
-[node name="level" type="RichTextLabel" parent="."]
+[node name="Level" type="RichTextLabel" parent="."]
 offset_left = 979.0
 offset_top = 489.0
 offset_right = 1465.0

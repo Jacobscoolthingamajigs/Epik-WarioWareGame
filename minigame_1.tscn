@@ -1,0 +1,144 @@
+[gd_scene load_steps=7 format=3 uid="uid://max6f1jxvscu"]
+
+[ext_resource type="Texture2D" uid="uid://3uyedyk52nif" path="res://Drawing-2.sketchpad-3.png" id="1_gi7k6"]
+[ext_resource type="PackedScene" uid="uid://drh4ctkrxsrgj" path="res://player.tscn" id="2_0hvi2"]
+[ext_resource type="Texture2D" uid="uid://frqpb6b6hut1" path="res://Drawing.sketchpad.png" id="3_0hvi2"]
+[ext_resource type="Script" uid="uid://cr1xsekfjp6rp" path="res://garlic_.gd" id="3_r6gmb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r6gmb"]
+size = Vector2(596.784, 48.4148)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wh6qq"]
+radius = 78.0256
+
+[node name="Minigame_1" type="Node2D"]
+
+[node name="Scrolling Background" type="Parallax2D" parent="."]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="Background" type="TextureRect" parent="Scrolling Background"]
+offset_left = -17.0
+offset_top = 10.0
+offset_right = 2983.0
+offset_bottom = 2410.0
+scale = Vector2(0.504495, 0.495949)
+texture = ExtResource("1_gi7k6")
+
+[node name="Platform1" type="StaticBody2D" parent="."]
+position = Vector2(-108, 44)
+scale = Vector2(2.78106, 1.66966)
+
+[node name="ColorRect" type="ColorRect" parent="Platform1"]
+offset_left = 14.0
+offset_top = 665.0
+offset_right = 614.0
+offset_bottom = 705.0
+scale = Vector2(1, 2.67698)
+color = Color(4.21144e-08, 0.187851, 0.140087, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform1"]
+position = Vector2(314.628, 719.307)
+scale = Vector2(1, 2.10758)
+shape = SubResource("RectangleShape2D_r6gmb")
+
+[node name="Player" parent="Platform1" instance=ExtResource("2_0hvi2")]
+position = Vector2(-19.7766, 25.1548)
+scale = Vector2(0.506876, 0.634769)
+
+[node name="Platform2" type="StaticBody2D" parent="."]
+position = Vector2(-108, 44)
+scale = Vector2(2.78106, 1.66966)
+
+[node name="ColorRect" type="ColorRect" parent="Platform2"]
+offset_left = 308.155
+offset_top = 515.074
+offset_right = 908.155
+offset_bottom = 555.074
+scale = Vector2(2.05094, 1.17904)
+color = Color(4.21144e-08, 0.187851, 0.140087, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2"]
+position = Vector2(845.72, 540.828)
+rotation = 3.14159
+scale = Vector2(1.79824, -1.03439)
+shape = SubResource("RectangleShape2D_r6gmb")
+
+[node name="Platform3" type="StaticBody2D" parent="."]
+position = Vector2(-108, 44)
+scale = Vector2(2.78106, 1.66966)
+
+[node name="ColorRect" type="ColorRect" parent="Platform3"]
+offset_left = -382.228
+offset_top = 337.793
+offset_right = 217.772
+offset_bottom = 377.793
+scale = Vector2(0.99502, 0.939812)
+color = Color(4.21144e-08, 0.187851, 0.140087, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform3"]
+position = Vector2(-86.2979, 357.557)
+rotation = 3.14159
+scale = Vector2(0.99623, -0.702818)
+shape = SubResource("RectangleShape2D_r6gmb")
+
+[node name="Garlic_" type="Node2D" parent="."]
+position = Vector2(3.05176e-05, 0)
+scale = Vector2(1, 1)
+script = ExtResource("3_r6gmb")
+
+[node name="Garlic" type="TextureRect" parent="Garlic_"]
+offset_left = 507.0
+offset_top = 1027.0
+offset_right = 1319.0
+offset_bottom = 1867.0
+rotation = 0.0124322
+scale = Vector2(0.156154, 0.156632)
+texture = ExtResource("3_0hvi2")
+
+[node name="Area2D" type="Area2D" parent="Garlic_"]
+position = Vector2(-1.00003, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Garlic_/Area2D"]
+position = Vector2(570, 1090)
+shape = SubResource("CircleShape2D_wh6qq")
+
+[node name="Garlic_2" type="Node2D" parent="."]
+position = Vector2(3.05176e-05, 0)
+scale = Vector2(1, 1)
+
+[node name="Garlic" type="TextureRect" parent="Garlic_2"]
+offset_left = 934.0
+offset_top = 779.0
+offset_right = 1746.0
+offset_bottom = 1619.0
+rotation = 0.0124322
+scale = Vector2(0.156154, 0.156632)
+texture = ExtResource("3_0hvi2")
+
+[node name="Area2D" type="Area2D" parent="Garlic_2"]
+position = Vector2(-1.00003, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Garlic_2/Area2D"]
+position = Vector2(998, 842)
+shape = SubResource("CircleShape2D_wh6qq")
+
+[node name="Garlic_3" type="Node2D" parent="."]
+position = Vector2(3.05176e-05, 0)
+scale = Vector2(1, 1)
+
+[node name="Garlic" type="TextureRect" parent="Garlic_3"]
+offset_left = 92.9999
+offset_top = 478.0
+offset_right = 905.0
+offset_bottom = 1318.0
+rotation = 0.0124322
+scale = Vector2(0.156154, 0.156632)
+texture = ExtResource("3_0hvi2")
+
+[node name="Area2D" type="Area2D" parent="Garlic_3"]
+position = Vector2(-1.00003, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Garlic_3/Area2D"]
+position = Vector2(160, 547)
+shape = SubResource("CircleShape2D_wh6qq")

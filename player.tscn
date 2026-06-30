@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://drh4ctkrxsrgj"]
+
+[ext_resource type="Texture2D" uid="uid://bfs27wclclx8g" path="res://Drawing.sketchpad-2.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://vnvemtnau6gh" path="res://player.gd" id="1_onrkg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_onrkg"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(216, 825)
+scale = Vector2(0.359316, 0.375331)
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(223, 833)
+scale = Vector2(6.86046, 15.044)
+shape = SubResource("CircleShape2D_onrkg")
