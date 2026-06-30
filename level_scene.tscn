@@ -10,15 +10,16 @@ script = ExtResource("1_3mivm")
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
-scale = Vector2(0.499928, 0.499603)
+scale = Vector2(0.499499, 0.503768)
 texture = ExtResource("1_187gu")
 
 [node name="GarlicContainer" type="HBoxContainer" parent="."]
-offset_left = 945.0
-offset_top = 699.0
-offset_right = 5021.0
-offset_bottom = 1539.0
-scale = Vector2(0.120706, 0.127062)
+offset_left = 845.0
+offset_top = 880.0
+offset_right = 4921.0
+offset_bottom = 1720.0
+rotation = 0.000502464
+scale = Vector2(0.150001, 0.162386)
 
 [node name="Garlic" type="TextureRect" parent="GarlicContainer"]
 layout_mode = 2
@@ -41,23 +42,24 @@ layout_mode = 2
 texture = ExtResource("2_187gu")
 
 [node name="Level" type="RichTextLabel" parent="."]
-offset_left = 979.0
-offset_top = 489.0
-offset_right = 1465.0
-offset_bottom = 676.0
+offset_left = 26.0
+offset_top = 42.0
+offset_right = 512.0
+offset_bottom = 229.0
 theme_override_colors/default_color = Color(0, 0.360784, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0.478431, 0, 1)
 theme_override_constants/outline_size = 30
-theme_override_font_sizes/normal_font_size = 35
+theme_override_font_sizes/normal_font_size = 50
 text = "Researches Completed ="
 
 [node name="Timer" type="RichTextLabel" parent="."]
-offset_left = 1128.0
-offset_top = 203.0
-offset_right = 1479.0
-offset_bottom = 382.0
+offset_left = 154.0
+offset_top = 313.0
+offset_right = 3568.0
+offset_bottom = 958.0
+scale = Vector2(0.639443, 0.588503)
 theme_override_colors/default_color = Color(0, 0.360784, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0.478431, 0, 1)
 theme_override_constants/outline_size = 50
-theme_override_font_sizes/normal_font_size = 100
+theme_override_font_sizes/normal_font_size = 500
 text = "0.0"
